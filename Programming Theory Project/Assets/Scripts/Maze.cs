@@ -53,26 +53,26 @@ public class Maze
         mazeData[siteY, siteX] = objectType;
         return (siteY * 100) + siteX; // Convention: maze position = Y*100 + X
     }
-    public int SetKey()
+    public int SetKey() // ABSTRACTION
     {
         return SetObject(key);
     }
 
-    public int SetPlayer()
+    public int SetPlayer()  // ABSTRACTION
     {
         return SetObject(player);
     }
 
-    public int SetGoodEnemy()
+    public int SetGoodEnemy() // ABSTRACTION
     {
         return SetObject(badEnemy);
     }
 
-    public int SetBadEnemy()
+    public int SetBadEnemy() // ABSTRACTION
     {
         return SetObject(goodEnemy);
     }
-    protected void CreateMaze( int rSize ) // ABSTRACTION
+    protected void CreateMaze( int rSize ) // 
     {
         mazeData = new int[rSize, rSize];
         int countLoop = 0, maxLoop = 1000 ; // Counter to prevent freezes
@@ -178,16 +178,7 @@ public class Maze
         if (mazeData[posY + 1, posX + 1] == wall) return true;
         if (mazeData[posY + 1, posX ] == wall) return true;
         if (mazeData[posY + 1, posX - 1] == wall) return true;
-       /*
-        for (int y = size-1 ; y >=0; y--)
-        {
-            string t = "";
-            for (int x = 0; x < size; x++)
-                t = t + mazeData[y, x] + ", ";
-            Debug.Log(t);
-        }
-        Debug.Log("surrounded=false: PosY=" + posY + " PosX=" + posX);
-        */
+
         return false;
     }
 }

@@ -8,8 +8,8 @@ public class EnemyController : MonoBehaviour
     public ParticleSystem enemyExplosionParticle;
     protected GameObject playerObject;
     private int lifeTime = 20 ;
-    private float m_forceSpeed = 1.0f; // ENCAPCULATION
-    public float forceSpeed  // ENCAPCULATION
+    private float m_forceSpeed = 1.0f; // ENCAPSULATION
+    public float forceSpeed  // ENCAPSULATION
     {
         get { return m_forceSpeed;  } // getter returns backing field
         set
