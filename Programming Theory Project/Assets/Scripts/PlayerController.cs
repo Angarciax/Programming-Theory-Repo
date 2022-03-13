@@ -38,6 +38,12 @@ public class PlayerController : MonoBehaviour
         {
             gameManager.gameOver = true;
             Destroy( gameObject );
+            GameObject goodEnemyLeft = GameObject.FindGameObjectWithTag("GoodEnemy");
+            if (goodEnemyLeft != null)
+                Destroy(goodEnemyLeft);
+            GameObject badEnemyLeft = GameObject.FindGameObjectWithTag("BadEnemy");
+            if (badEnemyLeft != null)
+                Destroy(badEnemyLeft);
             Debug.Log("Game Over Collision with " + collision.gameObject.tag);
         }
     }
