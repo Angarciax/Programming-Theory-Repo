@@ -1,0 +1,26 @@
+TO DO: design document or project brief
+
+A successful submission will include:
+A link to your project’s GitHub repo, showing multiple commits with commit messages and at least two branches.
+Demonstration of inheritance (parent/child classes). Add a comment in the code that says “// INHERITANCE” to indicate where it was implemented. 
+Demonstration of polymorphism (method overriding or overloading). Add a comment in the code that says “// POLYMORPHISM” to indicate where it was implemented.
+Demonstration of encapsulation (getters and setters). Add a comment in the code that says “// ENCAPSULATION” to indicate where it was implemented.
+Demonstration of abstraction (higher-level methods that abstract unnecessary details). Add a comment in the code that says “// ABSTRACTION” to indicate where it was implemented.
+
+
+1.  Inheritance - choose your object:s Parent/Child classes
+In your design document or project brief: 
+	Jot down the objects you want to serve as the starting point for your project concept. 
+
+2.  Polymorphism - choose your behaviors. Methods of the same name can be overloaded with different parameter types to have many forms
+Overriding also.
+In your design document or project brief: 
+	List the types of functions or behaviors that you would like to program in your application. 
+
+3.  Encapsulation - choose your data. Getter, Setter and Validation protecting
+In your design document or project brief: 
+	Record the types of functions or data you want to encapsulate in your project.
+
+4.  Abstraction - choose your functions. Only required Public methods and variables accesible
+In your design document or project brief: 
+	Note some of the higher-level functions that could be useful for reuse in your code. 
